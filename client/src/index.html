@@ -9,7 +9,39 @@
 </head>
 <body>
   <app-root></app-root>
-  <!--Uncomment to enable global site-wide implemenation of Zendesk Web Chat Widget-->
-  <!--<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=195c8cd3-98de-47cb-b549-45c6429016f5"> </script>-->
+
+<!-- Start of monorailapp Zendesk Widget script -->
+  <!--<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=cd2adb4a-7350-47b6-8d52-f85ee40b223f"> </script>-->
+<!-- End of monorailapp Zendesk Widget script -->
+<!--<script type="text/javascript">
+  window.zESettings = {
+    webWidget: {
+      /*
+      chat: {
+        concierge: {
+          avatarPath: 'https://res.cloudinary.com/vimvest/image/upload/v1645808147/ZenDesk/Support.png'
+        }
+      },*/
+      answerBot: {
+        avatar: {
+          url: 'https://res.cloudinary.com/vimvest/image/upload/v1645807513/ZenDesk/Smile.png'
+        }
+      }
+    }
+  };
+  dotnet dev-certs https
+dotnet dev-certs https --trust
+</script> -->
+
+<!-- Start of Monorail FreshDesk Widget script --> 
+<script>
+	window.fwSettings={
+	'widget_id':73000002295
+	};
+	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+</script>
+<script type='text/javascript' src='https://widget.freshworks.com/widgets/73000002295.js' async defer></script> 
+<!--End of Monorail FreshDesk Widget script-->
+
 </body>
 </html>
