@@ -76,3 +76,20 @@ namespace API
         }
     }
 }
+
+
+// Example Dependency Injection //
+/*
+//Singleton == 1 instance of service per application lifetime.
+~~ services.AddSingleton<IInterfaceClass, ImplementationClass>();
+
+//Scoped == 1 instance of service per lifetime of an HTTP request. 
+~~ services.AddScoped<IInterfaceClass, ImplementationClass>();
+
+//Transient == 1 instance of service, per lifetime of each dependency using the service, of/per each HTTP request. 
+~~ services.AddTransient<...>();
+
+//Adds an item to ICollection<T> where "item" is a variable that stores a ServiceDescriptor. 
+//In other words, ICollection<ServiceDescriptor>.Add(ServiceDescriptor item).
+~~ services.Add(item);
+*/
