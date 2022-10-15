@@ -5,9 +5,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FileUploadModule } from 'ng2-file-upload';
 
 
-
+//npm install ng2-file-upload --legacy-peer-dependancies
+//npm install @kolkov/ngx-gallery --legacy-peer-deps
+//npm install ng2-file-upload --legacy-peer-deps
 @NgModule({
   declarations: [],
   imports: [
@@ -18,14 +21,16 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     }), 
     TabsModule.forRoot(), 
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule, 
+    FileUploadModule
   ], 
   exports: [
     BsDropdownModule,
     ToastrModule, 
     TabsModule, 
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule, 
+    FileUploadModule
   ]
 })
 export class SharedModule { }
